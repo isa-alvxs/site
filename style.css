@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 body {
@@ -16,11 +16,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 8%;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 header h1 {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
@@ -33,15 +33,15 @@ header h1 {
 nav a {
     margin-left: 2rem;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
 nav a:hover,
 nav a.ativo {
-    color: #555555;
-    border-bottom: 2px solid #000000;
+    color: #cccccc;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 4px;
 }
 
@@ -65,7 +65,7 @@ nav a.ativo {
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 2px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 0.8rem;
 }
@@ -74,10 +74,11 @@ nav a.ativo {
     font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 1.2rem;
+    color: #ffffff;
 }
 
 .inicio p {
-    color: #cccccc;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -115,18 +116,18 @@ nav a.ativo {
 
 section {
     padding: 4rem 8%;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 section h2 {
     font-size: 1.8rem;
-    color: #fffefe;
+    color: #ffffff;
     margin-bottom: 1.5rem;
 }
 
 .historia .texto p {
-    color: #333333;
+    color: #ffffff;
     margin-bottom: 1rem;
     max-width: 900px;
 }
@@ -141,7 +142,7 @@ section h2 {
 
 .card,
 .album {
-    background: #000000;
+    background: #111111;
     color: #ffffff;
     border-radius: 12px;
     padding: 1.5rem;
@@ -153,7 +154,7 @@ section h2 {
 .card:hover,
 .album:hover {
     transform: translateY(-5px);
-    background-color: #111111;
+    background-color: #1a1a1a;
 }
 
 .icone,
@@ -179,7 +180,7 @@ section h2 {
 
 .card p,
 .album-info p {
-    color: #cccccc;
+    color: #ffffff;
     font-size: 0.9rem;
 }
 
@@ -201,7 +202,7 @@ section h2 {
     position: relative;
     padding-left: 1.8rem;
     margin-bottom: 1rem;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .curiosidades li::before {
@@ -215,18 +216,20 @@ section h2 {
 footer {
     text-align: center;
     padding: 2.5rem;
-    background-color: #ffffff;
-    color: #555555;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 0.85rem;
+    border-top: 1px solid #333333;
 }
 
 footer h3 {
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         gap: 1rem;
