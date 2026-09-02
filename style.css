@@ -132,56 +132,46 @@ section h2 {
     max-width: 900px;
 }
 
-.cards,
-.albuns {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-.card,
-.album {
-    background: #111111;
-    color: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    flex: 1 1 calc(33.333% - 1.5rem);
-    min-width: 250px;
-    transition: 0.3s;
+.card {
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.card:hover,
-.album:hover {
-    transform: translateY(-5px);
-    background-color: #1a1a1a;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.icone,
-.capa {
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: #000000;
-    margin-bottom: 1rem;
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
-.card h3,
-.album-info h3 {
-    font-size: 1.1rem;
-    color: #ffffff;
-    margin-bottom: 0.3rem;
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+  color: #fffbfb;
 }
 
-.card p,
-.album-info p {
-    color: #ffffff;
-    font-size: 0.9rem;
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffffff;
 }
 
 .curiosidades {
@@ -212,7 +202,200 @@ section h2 {
     color: #ffffff;
     font-size: 1.5rem;
 }
+.secao-musicas {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+}
 
+.secao-musicas h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.lista-albuns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.album-card {
+  background-color: #181818;
+  border: 1px solid #282828;
+  border-radius: 10px;
+  padding: 20px 24px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.album-card:hover {
+  background-color: #242424;
+  border-color: #000000;
+  transform: translateY(-2px);
+}
+
+.album-info h3 {
+  margin: 8px 0 4px 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.album-info .ano {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+  font-weight: 600;
+}
+
+.album-info .descricao {
+  margin: 0 0 18px 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #2a2a2a;
+  color: #1db954;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.badge-album {
+  color: #1e90ff;
+}
+
+.btn-spotify {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #000000;
+  color: #f3f0f0;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+
+.icon-spotify {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.info-container {
+    background-color: transparent;
+    padding: 0;                   
+    border: none;                
+}
+
+.rede-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.rede-item span {
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.icon-rede {
+    width: 20px;
+    height: 20px;
+    fill: #eaeeec;
+    flex-shrink: 0;
+}
+
+.info-container a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.info-container a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.contatos {
+    background-color: #000000;
+    padding: 5rem 8%;
+}
+
+.contatos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-container, .info-container {
+    flex: 1;
+}
+
+.form-container h2, .info-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    background-color: #121212;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #ffffff;
+}
+
+.form-container button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #cccccc;
+    transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
 footer {
     text-align: center;
     padding: 2.5rem;
