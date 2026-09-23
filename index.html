@@ -5,162 +5,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Rappa</title>
+    <!-- 1. Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- 2. Bootstrap Navbar (Componente de navegação responsiva) -->
     <header>
         <h1>O RAPPA</h1>
-        <nav>
-            <a href="#inicio" class="ativo">Início</a>
-            <a href="#historia">História</a>
-            <a href="#integrantes">Integrantes</a>
-            <a href="#discografia">Musicas</a>
-            <a href="#curiosidades">Contato</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black p-0">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-row flex-lg-row gap-3">
+                        <li class="nav-item"><a class="nav-link active p-0" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#historia">História</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#integrantes">Integrantes</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#discografia">Musicas</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="inicio" id="inicio">
-        <div class="conteudo">
-            <p class="pequeno">MÚSICA • CULTURA • HISTÓRIA</p>
-            <h2>O SOM QUE<br>MARCOU UMA GERAÇÃO</h2>
-            <p>
-                O Rappa foi uma banda brasileira conhecida por misturar diferentes estilos musicais e apresentar letras marcantes <br>sobre questões sociais e culturais.
-            </p>
-            <a href="#historia" class="botao">CONHEÇA A HISTÓRIA</a>
-        </div>
+    <!-- 3. Bootstrap Grid System (.container-fluid, .row, .col-lg-6) -->
+    <section class="inicio container-fluid" id="inicio">
+        <div class="row align-items-center w-100 m-0">
+            <div class="col-lg-6 conteudo p-0">
+                <p class="pequeno">MÚSICA • CULTURA • HISTÓRIA</p>
+                <h2>O SOM QUE<br>MARCOU UMA GERAÇÃO</h2>
+                <p>
+                    O Rappa foi uma banda brasileira conhecida por misturar diferentes estilos musicais e apresentar letras marcantes <br>sobre questões sociais e culturais.
+                </p>
+                <!-- 4. Bootstrap Button Utility (.btn) -->
+                <a href="#historia" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-dark">CONHEÇA A HISTÓRIA</a>
+            </div>
 
-        <div class="simbolo">
-            <img src="./Imagem/banda.jpg" width="600px" height="400px">
+            <div class="col-lg-6 simbolo text-center p-0">
+                <img src="./Imagem/banda.jpg" class="img-fluid" width="600px" height="400px" alt="Banda O Rappa">
+            </div>
         </div>
     </section>
 
     <section class="historia" id="historia">
-        <p class="pequeno">CONHEÇA A BANDA<br>
-            <h2>HISTÓRIA</h2>
+        <h2>HISTÓRIA</h2>
         <div class="texto">
             <p>O Rappa foi uma banda brasileira formada no Rio de Janeiro no início da década de 1990. O grupo ficou conhecido por apresentar uma mistura de diferentes estilos musicais.
-            Ao longo de sua trajetória, a banda combinou elementos de rock, reggae, rap, samba e música brasileira, criando uma identidade própria.
-            As letras de O Rappa ficaram conhecidas por abordar temas relacionados à sociedade, desigualdade, violência, política e cotidiano.
-            A banda conquistou grande espaço na música brasileira e deixou um importante legado cultural.</p>
+            Ao longo de sua trajetória, a banda combinou elementos de rock, reggae, rap, samba e música brasileira, criando uma identidade própria.</p>
         </div>
-   <section class="integrantes" id="integrantes">
-  <h2>INTEGRANTES</h2>
-  <div class="cards">
-    
-    <div class="card">
-      <img src="./Imagem/Marcelo Falção.webp" alt="Marcelo Falcão">
-      <h3>Marcelo Falcão</h3>
-      <p>Vocal</p>
-    </div>
+    </section>
 
-    <div class="card">
-      <img src="./Imagem/Marcelo Yuka.webp" alt="Marcelo Yuka">
-      <h3>Marcelo Yuka</h3>
-      <p>Bateria e composição</p>
-    </div>
+    <section class="integrantes" id="integrantes">
+        <h2>INTEGRANTES</h2>
 
-    <div class="card">
-      <img src="./Imagem/Xandao.jpg" alt="Xandão">
-      <h3>Xandão</h3>
-      <p>Guitarra</p>
-    </div>
+        <!-- 5. Bootstrap Carousel (Slider interativo) -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="card">
-      <img src="./Imagem/lauro.jpg" alt="Lauro Farias">
-      <h3>Lauro Farias</h3>
-      <p>Baixo</p>
-    </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
 
-    <div class="card">
-      <img src="./Imagem/lobato.jpg" alt="Marcelo Lobato">
-      <h3>Marcelo Lobato</h3>
-      <p>Teclados, percussão e bateria</p>
-    </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imagem/fariass.png" alt="Lauro" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lauro Farias</h5>
+                        <p>Baixista</p>
+                    </div>
+                </div>
 
-  </div>
-<section class="secao-musicas" id="musicas">
-  <h2>MÚSICAS</h2>
+                <div class="carousel-item">
+                    <img src="./Imagem/Marcelolobato.png" alt="Marcelo Lobato" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marcelo Lobato</h5>
+                        <p>Tecladista / Baterista</p>
+                    </div>
+                </div>
 
-  <div class="lista-albuns">
+                <div class="carousel-item">
+                    <img src="./Imagem/Marcelo Falção.webp" alt="Marcelo Falcão" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marcelo Falcão</h5>
+                        <p>Vocalista</p>
+                    </div>
+                </div>
 
-    <div class="album-card">
-      <div class="album-info">
-        <h3>Minha Alma (A Paz Que Eu Não Quero)</h3>
-        <p class="ano">1999</p>
-        <p class="descricao">Uma crítica direta à falsa paz e ao silenciamento social, defendendo que não existe paz verdadeira sem justiça e igualdade.</p>
-        <a href="https://open.spotify.com/track/0lPWEt7kSY37pSUIH68ME0?si=8yM5eon3RQaAiwjhBiJ4dA&utm_source=copy-link" target="_blank" class="btn-spotify">
-          <svg class="icon-spotify" viewBox="0 0 24 24">
-            <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.899 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.019zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-          </svg>
-          Ouvir no Spotify
-        </a>
-      </div>
-    </div>
+                <div class="carousel-item">
+                    <img src="./Imagem/Marcelo Yuka.webp" alt="Marcelo Yuka" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marcelo Yuka</h5>
+                        <p>Baterista / Compositor</p>
+                    </div>
+                </div>
 
-    <div class="album-card">
-      <div class="album-info">
-        <h3>Anjos (Pra Quem Tem Fé)</h3>
-        <p class="ano">2013</p>
-        <p class="descricao">Fala sobre a força da fé e a esperança para superar momentos difíceis.</p>
-        <a href="https://open.spotify.com/intl-pt/track/1UvWx2hgpxlF7HPbwLSmIY?si=c92110c551494abd" target="_blank" class="btn-spotify">
-          <svg class="icon-spotify" viewBox="0 0 24 24">
-            <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.899 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.019zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-          </svg>
-          Ouvir no Spotify
-        </a>
-      </div>
-    </div>
+                <div class="carousel-item">
+                    <img src="./Imagem/Xandao.jpg" alt="Xandão" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Xandão</h5>
+                        <p>Guitarrista</p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="album-card">
-      <div class="album-info">
-        <h3>Auto-reverse</h3>
-        <p class="ano">2013</p>
-        <p class="descricao">Usa a metáfora do toca-fitas que inverte o lado da fita automaticamente para falar sobre recomeçar, resiliência e enxergar a vida por uma nova perspectiva.</p>
-        <a href="https://open.spotify.com/intl-pt/track/19QGIdhhRCB303eGVUQyZM?si=9c52e2d59be84c66" target="_blank" class="btn-spotify">
-          <svg class="icon-spotify" viewBox="0 0 24 24">
-            <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.899 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.019zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-          </svg>
-          Ouvir no Spotify
-        </a>
-      </div>
-    </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
 
-</section>
-<section class="contatos" id="contatos">
-  <div class="container">
-    <form class="form-container">
-      <h2>Entre em contato</h2>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <section class="secao-musicas" id="discografia">
+        <h2>MÚSICAS</h2>
 
-    <div class="info-container">
-      <h2>Minhas Redes</h2>
-      
-      <div class="rede-item">
-        <svg class="icon-rede" viewBox="0 0 24 24">
-        </svg>
-        <span><strong>GitHub:</strong> <a href="https://github.com/isa-alvxs" target="_blank">isa-alvxs</a></span>
-      </div>
+        <!-- 6. Bootstrap Flexbox / Grelha de Cards (.d-flex, .gap-3) -->
+        <div class="lista-albuns d-flex flex-wrap justify-content-center gap-4">
+            
+            <!-- 7. Bootstrap Cards (.card e .card-body) -->
+            <div class="card album-card" style="max-width: 350px;">
+                <div class="card-body album-info p-0">
+                    <!-- 8. Bootstrap Badge (.badge) -->
+                    <span class="badge bg-light text-dark mb-2">Sucesso</span>
+                    <h3>Minha Alma (A Paz Que Eu Não Quero)</h3>
+                    <p class="ano">1999</p>
+                    <p class="descricao">Uma crítica direta à falsa paz e ao silenciamento social, defendendo que não existe paz verdadeira sem justiça e igualdade.</p>
+                    <a href="https://open.spotify.com/track/0lPWEt7kSY37pSUIH68ME0" target="_blank" class="btn-spotify">Ouvir no Spotify</a>
+                </div>
+            </div>
 
-      <div class="rede-item">
-        <svg class="icon-rede" viewBox="0 0 24 24">
-        </svg>
-        <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/isabela-alves-778402316" target="_blank">Isabela Alves</a></span>
-      </div>
+            <div class="card album-card" style="max-width: 350px;">
+                <div class="card-body album-info p-0">
+                    <span class="badge bg-light text-dark mb-2">Hino</span>
+                    <h3>Anjos (Pra Quem Tem Fé)</h3>
+                    <p class="ano">2013</p>
+                    <p class="descricao">Fala sobre a força da fé e a esperança para superar momentos difíceis.</p>
+                    <a href="https://open.spotify.com/intl-pt/track/1UvWx2hgpxlF7HPbwLSmIY" target="_blank" class="btn-spotify">Ouvir no Spotify</a>
+                </div>
+            </div>
 
-      <div class="rede-item">
-        <svg class="icon-rede" viewBox="0 0 24 24">
-        </svg>
-        <span><strong>E-mail:</strong> <a href="mailto:isabelaalves1237i@gmail.com">isabelaalves1237i@gmail.com</a></span>
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="card album-card" style="max-width: 350px;">
+                <div class="card-body album-info p-0">
+                    <span class="badge bg-light text-dark mb-2">Clássico</span>
+                    <h3>Auto-reverse</h3>
+                    <p class="ano">2013</p>
+                    <p class="descricao">Usa a metáfora do toca-fitas para falar sobre recomeçar, resiliência e enxergar a vida por uma nova perspectiva.</p>
+                    <a href="https://open.spotify.com/intl-pt/track/19QGIdhhRCB303eGVUQyZM" target="_blank" class="btn-spotify">Ouvir no Spotify</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contatos" id="contatos">
+        <div class="container-contato">
+            <div class="bloco-formulario">
+                <h2>Entre em contato</h2>
+                <form class="form-container">
+                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                    <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                    <textarea class="form-control" placeholder="Sua mensagem" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-light w-100 fw-bold">Enviar</button>
+                </form>
+            </div>
+
+            <div class="bloco-redes">
+                <h2>Minhas Redes</h2>
+                <div class="rede-item">
+                    <span><strong>GitHub:</strong> <a href="#" target="_blank">isa-alvxs</a></span>
+                </div>
+                <div class="rede-item">
+                    <span><strong>LinkedIn:</strong> <a href="#" target="_blank">Isabela Alves</a></span>
+                </div>
+                <div class="rede-item">
+                    <span><strong>E-mail:</strong> <a href="mailto:isabelaalves1237i@gmail.com">isabelaalves1237i@gmail.com</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

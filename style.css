@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -17,17 +17,13 @@ header {
     align-items: center;
     padding: 1.2rem 8%;
     background-color: #000000;
+    border-bottom: 1px solid #222222;
 }
 
 header h1 {
     color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 1px;
-}
-
-.Logo {
-    width: 100px;
-    height: 100px;
 }
 
 nav a {
@@ -49,11 +45,6 @@ nav a.ativo {
     background-color: #000000;
     color: #ffffff;
     padding: 5rem 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
 }
 
 .inicio .conteudo {
@@ -78,40 +69,8 @@ nav a.ativo {
 }
 
 .inicio p {
-    color: #ffffff;
+    color: #cccccc;
     margin-bottom: 2rem;
-}
-
-.botao {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 0.8rem 1.8rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.2s;
-}
-
-.botao:hover {
-    background-color: #cccccc;
-    transform: translateY(-2px);
-}
-
-.simbolo {
-    position: relative;
-}
-
-.disco {
-    width: 280px;
-    height: 280px;
-    background: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    color: #000000;
 }
 
 section {
@@ -127,247 +86,102 @@ section h2 {
 }
 
 .historia .texto p {
-    color: #ffffff;
+    color: #cccccc;
     margin-bottom: 1rem;
     max-width: 900px;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  background-color: #000000;
-  border-radius: 12px;
-  padding: 20px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin: 10px 0 5px 0;
-  font-size: 1.2rem;
-  color: #fffbfb;
-}
-
-.card p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #ffffff;
-}
-
-.curiosidades {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.curiosidades h2 {
-    color: #ffffff;
-}
-
-.curiosidades ul {
-    list-style: none;
-    max-width: 800px;
-}
-
-.curiosidades li {
-    position: relative;
-    padding-left: 1.8rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
-
-.curiosidades li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #ffffff;
-    font-size: 1.5rem;
-}
-.secao-musicas {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  color: #ffffff;
-}
-
-.secao-musicas h2 {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-}
-
-.lista-albuns {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
+/* Estilização dos Cards em grelha do Bootstrap */
 .album-card {
-  background-color: #181818;
-  border: 1px solid #282828;
-  border-radius: 10px;
-  padding: 20px 24px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    background-color: #000000 !important;
+    border: 1px solid #333333 !important;
+    border-radius: 10px !important;
+    padding: 20px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .album-card:hover {
-  background-color: #242424;
-  border-color: #000000;
-  transform: translateY(-2px);
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
 }
 
 .album-info h3 {
-  margin: 8px 0 4px 0;
-  font-size: 1.3rem;
-  color: #ffffff;
+    margin: 8px 0 4px 0;
+    font-size: 1.3rem;
+    color: #ffffff;
 }
 
 .album-info .ano {
-  margin: 0 0 12px 0;
-  font-size: 0.9rem;
-  color: #b3b3b3;
-  font-weight: 600;
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    font-weight: 600;
 }
 
 .album-info .descricao {
-  margin: 0 0 18px 0;
-  font-size: 0.95rem;
-  color: #cccccc;
-  line-height: 1.5;
-}
-
-.badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #2a2a2a;
-  color: #1db954;
-  padding: 3px 8px;
-  border-radius: 4px;
-  letter-spacing: 0.5px;
-}
-
-.badge-album {
-  color: #1e90ff;
+    margin: 0 0 18px 0;
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.5;
 }
 
 .btn-spotify {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #000000;
-  color: #f3f0f0;
-  font-weight: bold;
-  font-size: 0.85rem;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-
+.btn-spotify:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
 
 .icon-spotify {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
-.info-container {
-    background-color: transparent;
-    padding: 0;                   
-    border: none;                
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
 }
 
-.rede-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
-}
-
-.rede-item span {
-    font-size: 0.95rem;
-    color: #ffffff;
-}
-
-.icon-rede {
-    width: 20px;
-    height: 20px;
-    fill: #eaeeec;
-    flex-shrink: 0;
-}
-
-.info-container a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.info-container a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
+/* Contatos empilhados */
 .contatos {
     background-color: #000000;
     padding: 5rem 8%;
 }
 
-.contatos .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1000px;
+.container-contato {
+    max-width: 500px;
     margin: 0 auto;
-}
-
-.form-container, .info-container {
-    flex: 1;
-}
-
-.form-container h2, .info-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
 }
 
 .form-container input,
 .form-container textarea {
     width: 100%;
-    padding: 12px 16px;
+    padding: 8px 14px; 
     margin-bottom: 15px;
-    background-color: #121212;
+    background-color: #000000;
     border: 1px solid #333333;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #ffffff;
     font-size: 0.95rem;
     outline: none;
-    transition: border-color 0.3s ease;
 }
 
 .form-container input:focus,
 .form-container textarea:focus {
     border-color: #ffffff;
+    color: #fff;
+    background-color: #000;
 }
 
 .form-container button {
@@ -375,64 +189,38 @@ section h2 {
     color: #000000;
     padding: 10px 24px;
     border: none;
-    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .form-container button:hover {
     background-color: #cccccc;
-    transform: translateY(-2px);
-}
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
+.rede-item {
+    margin-bottom: 15px;
 }
+
+.bloco-redes a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bloco-redes a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 2.5rem;
     background-color: #000000;
     color: #ffffff;
     font-size: 0.85rem;
-    border-top: 1px solid #333333;
+    border-top: 1px solid #222222;
 }
 
-footer h3 {
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    nav a {
-        margin: 0 0.8rem;
-    }
-
-    .inicio {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .inicio .conteudo {
-        margin-bottom: 3rem;
-    }
-
-    .card,
-    .album {
-        flex: 1 1 100%;
-    }
+.carousel-item img {
+    height: 380px;     
+    object-fit: cover; 
 }
